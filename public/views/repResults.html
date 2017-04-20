@@ -1,0 +1,18 @@
+<div ng-if="!repData" class="">
+  <p><a ui-sref="home">Return home</a> and enter the address you would like to search.</p>
+  <img src="https://i.ytimg.com/vi/htOroIbxiFY/hqdefault.jpg">
+</div>
+
+
+<div ng-if="repData">
+  <div class="youradd" ng-model="repData">
+    <p>Representation results for {{repData.inputAddress.street}}, {{repData.inputAddress.city}}, {{repData.inputAddress.state}} {{repData.inputAddress.zip}}</p>
+    <p class="districts">District Details:</p>
+    <ul class="ul-district">
+      <li ng-repeat="data in repData.data">{{data}}</li>
+    </ul>
+  </div>
+  <div ng-repeat="rep in repData.officials">
+    <rep-comp rep="rep"></rep-comp>
+  </div>
+</div>

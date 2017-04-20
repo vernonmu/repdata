@@ -1,0 +1,172 @@
+body {
+  background-color: #fafafa;
+
+}
+
+.form-getadd {
+  text-align: center;
+}
+
+.form-feedback {
+  max-width:500px;
+  margin:25px auto;
+}
+.page.feedback-submit .card {
+  min-height:300px;
+}
+
+.rep {
+  font-size:2em;
+  text-align: center;
+  padding-top:30px;
+}
+
+.getadd {
+  margin-top:100px;
+}
+
+.form-getadd input {
+  text-align: center;
+}
+
+.youradd {
+
+  font-size:1.1em;
+  margin:25px 0px;
+}
+
+.districts {
+  margin-bottom:0px;
+  font-weight: bold;
+}
+
+ul.ul-district {
+  margin-top:0px;
+}
+
+.rep-name {
+  font-size:1.5em;
+}
+
+.rep-party {
+  font-style: italic;
+}
+
+.rep-panel {
+  height:auto;
+}
+
+.rep-panel ul {
+  text-align: center;
+  display:block;
+}
+.rep-panel li {
+  text-align: center;
+}
+.center-block {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+input#address {
+  font-size:2em !important;
+}
+
+.rt-container {
+  padding:20px 10%;
+  min-height:68vh;
+}
+
+header h1 {
+  text-align: center;
+  display: inline-block;
+  font-size:3em;
+  margin-top:0px;
+}
+
+/*.login {
+  height:50px;
+  width:150px;
+  position:absolute;
+  right:0;
+  background-color:#009688;
+}
+
+.login span {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top:15px;
+  margin-left:5px;
+  font-weight: bold;
+}*/
+
+.login img {display:inline-block;margin:15px 0px 0px 10px;}
+
+.row-details {
+  margin-bottom:0px;
+}
+
+.line1 {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.card {
+    min-height:500px;
+}
+
+.card-image img {
+  /*max-height:350px !important;*/
+  /*height:auto;*/
+
+}
+
+footer {
+  background-color: #80cbc4 !important;
+  color: #333;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a .logo {
+  color:black;
+}
+/*.rep-info img {
+  height:150px;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+  display:block;
+}*/
+
+.rep-info {
+  padding-top: 10px;
+  background-color: white;
+}
+
+.rep-info h7 {
+  font-weight:bold;
+  font-size:1.15em;
+}
+
+
+
+.getadd {
+  margin-bottom:100px;
+}
+
+.card .card-action {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.title {display:inline-block;vertical-align: top;}
+h6 {
+  font-size:1.5em;
+  margin-left:10px;
+}

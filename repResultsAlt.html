@@ -1,0 +1,19 @@
+<div class="col s12 m6 l3 center-block" ng-repeat="rep in repData.officials">
+  <div class="card">
+    <div class="card-image">
+      <img ng-src="{{rep.photo}}">
+      <span class="card-title">{{rep.name}}</span>
+    </div>
+    <div class="card-content">
+      <p>{{rep.officeName}}</p>
+      <p>{{rep.party}}</p>
+      <p>{{rep.phone[0]}}</p>
+      <p>{{rep.address[0]["line1"]}}</p>
+      <p>{{rep.channels}}</p>
+      <div class="card-action">
+        <a href="#">contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>

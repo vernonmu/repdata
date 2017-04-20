@@ -1,0 +1,32 @@
+<ul class="rep-info collapsible" data-collapsible="accordion">
+  <li>
+    <div class="collapsible-header">
+      <img ng-if="$ctrl.rep.photo" ng-src="{{$ctrl.rep.photo}}" width="50" alt="">
+      <h6 class="title"><strong>{{$ctrl.rep.officeName}}</strong><br>{{$ctrl.rep.name}} <em><small>{{$ctrl.rep.party}}</small></em></h6>
+
+    </div>
+    <div class="collapsible-body">
+      <div class="row row-details">
+        <div class="col s12 m6">
+          <h7>Details</h7>
+          <p class="line1"><span ng-if="$ctrl.rep.address">{{$ctrl.rep.address[0]["line1"]}}</span>
+            <span ng-if="$ctrl.rep.address"><br>{{$ctrl.rep.address[0]["line2"]}}</span><span ng-if="$ctrl.rep.address">{{$ctrl.rep.address[0]["city"]}},</span> <span ng-if="$ctrl.rep.address">{{$ctrl.rep.address[0]["state"]}}</span> <span ng-if="$ctrl.rep.address">{{$ctrl.rep.address[0]["zip"]}}<br></span>
+            <span ng-if="$ctrl.rep.phone[0]">Phone: {{$ctrl.rep.phone[0]}}<br></span><span ng-if="$ctrl.rep.url">Website: <a ng-href="{{$ctrl.rep.url[0]}}" target="_blank">{{$ctrl.rep.url[0]}}</a></span></p>
+          <!-- <p>{{$ctrl.rep.contactChannels[2]}}</p> -->
+        </div>
+        <div class="col s12 m6" ng-if="$ctrl.rep.channels">
+          <h7>Social Channels</h7>
+          <ul>
+            <li ng-repeat="channel in $ctrl.rep.channels">
+              {{channel.type}}:
+
+              <a ng-if="channel.type == 'GooglePlus'" ng-href="http://plus.google.com/{{channel.id}}" target="_blank">{{channel.id}}</a>
+
+              <a ng-if="channel.type !== 'GooglePlus'" ng-href="http://{{channel.type}}.com/{{channel.id}}" target="_blank">{{channel.id}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

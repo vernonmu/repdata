@@ -1,0 +1,30 @@
+<div class="page">
+  <h1>Feedback</h1>
+  <h4>Your feedback is very important to us!</h4>
+
+<p>Whether you'd like to compliment an outstanding Macy's employee or provide feedback about a disappointment, your comments are welcome.</p>
+
+<p>Please note, while we appreciate all feedback, we may be unable to respond to every submission.</p>
+  <form class="form-feedback">
+    <input-field>
+        <input type="text" ng-model="dummyInputs.inputFieldInput">
+        <label>Your Name</label>
+    </input-field>
+    <div input-field>
+      <select class="" ng-model="select.value3" material-select multiple watch>
+          <option>New App Feature</option>
+          <option>Found Bug</option>
+          <option>I don't like my rep</option>
+          <!-- <option ng-repeat="value in select.choices">Don't Like My Rep</option> -->
+      </select>
+      <label>Suggestion Type</label>
+    </div>
+    <input-field>
+        <textarea ng-model="dummyInputs.textAreaInput" class="materialize-textarea"></textarea>
+    <label>Comment</label>
+    </input-field>
+    <button ui-sref="feedback-submit" class="btn-large" type="submit">Submit</button>
+  </form>
+
+
+</div>
