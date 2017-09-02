@@ -1,4 +1,4 @@
-angular.module("rtApp", ['ui.materialize', 'ui.router'])
+angular.module("rtApp", ['ui.materialize', 'ui.router', 'ngSanitize'])
 .config(function($urlRouterProvider, $stateProvider){
   $stateProvider
 

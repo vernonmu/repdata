@@ -1,6 +1,21 @@
 <div class="getadd">
-  <form class="form-getadd" role="search">
-    <input type="text" ng-model="address" placeholder="Enter Address" id="address"></input>
-    <button class="btn-large" ui-sref="results" ng-click="getRepData(address)">Run</button>
+  <form class="form-getadd" role="search" ng-submit="getRepData(address)">
+
+    <input type="text" ng-model="address" placeholder="Enter Address" id="address"  aria-required="true" required></input>
+    <!-- <button type="submit" class="btn-large deep-orange search" ui-sref="results">Find</button> -->
+    <button type="submit" class="btn-large deep-orange search waves-effect waves-light" >Find</button>
   </form>
+</div>
+
+<div ng-if="repData">
+  <div class="youradd" ng-model="repData">
+    <p>Representation results for <span ng-if="repData.inputAddress.street">{{repData.inputAddress.street}},</span> <span ng-if="repData.inputAddress.city.length>0">{{repData.inputAddress.city}},</span> {{repData.inputAddress.state}} {{repData.inputAddress.zip}}</p>
+    <p class="districts">District Details:</p>
+    <ul class="ul-district">
+      <li ng-repeat="data in repData.data">{{data}}</li>
+    </ul>
+  </div>
+  <div ng-repeat="rep in repData.officials">
+    <rep-comp rep="rep"></rep-comp>
+  </div>
 </div>

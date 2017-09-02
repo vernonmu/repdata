@@ -53,7 +53,7 @@ angular.module("rtApp").service('mainSrv', function($q, $http) {
 
           var representationData = []
           var representationDataObj = response.data.divisions
-        
+
 
           for (var key in representationDataObj) {
               representationData.push(representationDataObj[key].name)
@@ -62,6 +62,9 @@ angular.module("rtApp").service('mainSrv', function($q, $http) {
 
 
           return {inputAddress: tempObj, officials: result, data: representationData}
+        })
+        .catch(function(e){
+          console.log(e);
         })
       }
 
